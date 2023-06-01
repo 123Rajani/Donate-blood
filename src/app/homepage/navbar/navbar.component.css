@@ -9,7 +9,7 @@
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler-icon,
 .navbar-scrolled .navbar-brand {
-  color: #fff;
+  color: #605d5d;
 }
 
 /* Color of the navbar AFTER scroll */
@@ -20,12 +20,12 @@
 
 .mask-custom {
   backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, .15);
+  background-color: rgba(42, 40, 40, 0.15);
 }
 
 .navbar-brand {
-  font-size: 1.75rem;
-  letter-spacing: 3px;
+  font-size: 40px;
+  letter-spacing: 1px;
 }
 
 
