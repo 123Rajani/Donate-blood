@@ -34,9 +34,12 @@ const appRoute: Routes = [
   {path:'News', component:NewsComponent},
   {path:'Login', component:LoginComponent},
   {path:'Signup', component:SignupComponent},
-  
-
- {path:'**', component:ErrorComponent}
+  {path:'adminprofile', component:AdminProfileComponent},
+  {path:'donorprofile', component:DonorProfileComponent},
+  {path:'bloodbankprofile', component:BloodbankProfileComponent},
+  {path:'organizerprofile', component:OrganizerProfileComponent},
+  {path:'donorregistration', component:DonorRegistrationComponent},
+  {path:'**', component:ErrorComponent}
  
 ]
 

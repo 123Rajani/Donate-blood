@@ -72,7 +72,7 @@ body {
    
   }
   .header .typed li{
-    color: #67595E;
+    color: #E82B40;
     font-size: 70px;
     font-weight: 600;
     list-style: none;
@@ -95,7 +95,7 @@ body {
     width: 100%;
     left: 0;
     border-left: 2px solid #02020228;
-    background: #ffffff;
+    background: #f9faf7;
     animation: cursor 1s infinite step-end, typing 1.5s steps(8) infinite;
   }
   @keyframes cursor{
