@@ -24,15 +24,22 @@
 }
 
 .navbar-brand {
-  font-size: 40px;
+  font-size: 33px;
   letter-spacing: 1px;
 }
 
-
-
-  .hero-img {
+ 
+  body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url('../../../assets/images/front-view-woman-holding-paper-heart-with-heartbeat.jpg');
     width: 100%;
     height: auto;
+   
   }
 
   /*text styles*/
@@ -45,7 +52,7 @@
     font-family: "Courier Prime", monospace; 
   }
   body {
-    background-color: #fefefe00;
+    background-color: #46404000;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -91,7 +98,7 @@
     width: 100%;
     left: 0;
     border-left: 2px solid #02020228;
-    background: #fdfdfe;
+    background: #ffffff;
     animation: cursor 1s infinite step-end, typing 1.5s steps(8) infinite;
   }
   @keyframes cursor{
