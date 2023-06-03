@@ -28,19 +28,16 @@
   letter-spacing: 1px;
 }
 
- 
-  body {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-image: url('../../../assets/images/front-view-woman-holding-paper-heart-with-heartbeat.jpg');
-    width: 100%;
-    height: auto;
-   
-  }
+body {
+  background-color: #46404000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-image: url('../../../assets/images/front-view-woman-holding-paper-heart-with-heartbeat.jpg');
+  width: 100%;
+  height: auto;  
+}
 
   /*text styles*/
 

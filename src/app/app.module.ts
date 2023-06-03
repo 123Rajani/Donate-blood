@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,8 +19,26 @@ import { AdminProfileComponent } from './admin-profile/admin-profile.component';
 import { BloodbankProfileComponent } from './bloodbank-profile/bloodbank-profile.component';
 import { HowtodonateComponent } from './homepage/howtodonate/howtodonate.component';
 import { HowtootganizeComponent } from './homepage/howtootganize/howtootganize.component';
+import { ErrorComponent } from './error/error.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 
+const appRoute: Routes = [
+  {path:'', component:HomepageComponent}, //default route
+  //{path:'', redirectTo:'Home', pathMatch:'full'},
+  {path:'Home', component:HomepageComponent},
+  {path:'BloodAvailability', component:BloodavailabilityComponent},
+  {path:'DonationCampaigns', component:DonationCampaignsComponent},
+  {path:'Howtodonate', component:HowtodonateComponent},
+  {path:'Howtoorganize', component:HowtootganizeComponent},
+  {path:'News', component:NewsComponent},
+  {path:'Login', component:LoginComponent},
+  {path:'Signup', component:SignupComponent},
+  
+
+ {path:'**', component:ErrorComponent}
+ 
+]
 
 @NgModule({
   declarations: [
@@ -38,11 +57,14 @@ import { HowtootganizeComponent } from './homepage/howtootganize/howtootganize.c
     BloodbankProfileComponent,
     HowtodonateComponent,
     HowtootganizeComponent,
+    ErrorComponent,
+    NavigationBarComponent,
   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
